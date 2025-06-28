@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/creatGame.css">
+    <script src="../js/creatGame.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="link2"><a href="../html/board.html" >ללוח</a></div>
+    <div class="creat">
+        <label for="gameType">סוג מונופול</label>
+        <input type="text" id="gameType"><br><br>
+        <label for="countryName">מדינה:</label>
+        <input type="text" id="countryName"><br><br>
+        <label for="continent">יבשת:</label>
+        <input type="text" id="continent"><br><br>
+        <label for="landPrice">מחיר ראשון:</label>
+        <input type="number" id="landPrice"><br><br>
+        <label for="homePrice">מחיר שני:</label>
+        <input type="number" id="homePrice"><br><br>
+        <label for="hotelPrice">מחיר שלישי:</label>
+        <input type="number" id="hotelPrice"><br><br>
+        <label for="landTex">מס ראשון:</label>
+        <input type="number" id="landTex"><br><br>
+        <label for="homeTex">מס שני:</label>
+        <input type="number" id="homeTex"><br><br>
+        <label for="hotelTex">מס שלישי:</label>
+        <input type="number" id="hotelTex"><br><br>
+                  <input list="meanning" name="mean" id="colorInput" placeholder="צבע קבוצה" required>
+                 <datalist id="meanning">
+                 <option value="lightblue"></option>             
+                 <option value="lightgreen"></option>
+                 <option value="lightyellow"></option>
+                 <option value="lightpink"></option>
+                 <option value="lightgoldenrodyellow"></option>
+                 <option value="lavender"></option>
+                 <option value="tan"></option>
+                 </datalist><br><br>
+        <button onclick="updateDiv()">הוסף</button>
+        <button onclick="deleteData()">מחק לוח</button>
+
+        <table id="gameTable">
+            <thead>
+                <tr>
+                    <th>מיקום</th>
+                    <th>יבשת</th>
+                    <th>מדינה</th>
+                    <th>מחיר ראשון</th>
+                    <th>מחיר שני</th>
+                    <th>מחיר שלישי</th>
+                    <th>מס ראשון</th>
+                    <th>מס שני</th>
+                    <th>מס שלישי</th>
+                    <th>צבע מחלקה</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: 'Secular One', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image:url('../image/wallpaperflare.com_wallpaper (10).jpg');
+    object-fit: cover; 
+}
+
+div {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #3ef2ff;
+    padding: 15px 20px;
+     width: 30%; 
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+button:hover {
+    background-color: #3ef2ff;
+}
+a {
+    margin: 10px;
+    background-color: #62ffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center; 
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+a:hover {
+    background-color: #3ef2ff;
+}
+p {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+

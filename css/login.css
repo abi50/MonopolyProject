@@ -1,0 +1,33 @@
+body{
+  /* direction: rtl; */
+  font-family: 'Secular One', sans-serif;
+  text-align: center;  
+  background-image:url('../image/wallpaperflare.com_wallpaper (10).jpg');
+  object-fit: cover; 
+}
+button {
+background-color: #4CAF50;
+width: 30%;
+font-family: 'Secular One', sans-serif;
+color: white;
+padding: 12px;
+border: none;
+cursor: pointer;
+margin: 1%;
+transition: background-color 0.3s ease;
+}
+utton:hover {
+background-color: #45a049;
+}
+input {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+margin: 2%;
+}
+
+input:focus {
+outline: none;
+border-color: #007bff; 
+}

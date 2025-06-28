@@ -1,0 +1,259 @@
+body{
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+     
+  }
+.board{
+    display: grid;
+    grid-template-columns: repeat(9, auto); 
+    grid-template-rows: repeat(9, auto);
+    padding: 10px;
+    gap: 2%;
+    width: 70%;
+    grid-template-areas:
+    "item17 item18 item19 item20 item21 item22 item23 item24 item25"
+    "item16 item33 item33 item33 item33 item33 item33 item33 item26"
+    "item15 item33 item33 item33 item33 item33 item33 item33 item27"
+    "item14 item33 item33 item33 item33 item33 item33 item33 item28"
+    "item13 item33 item33 item33 item33 item33 item33 item33 item29"
+    "item12 item33 item33 item33 item33 item33 item33 item33 item30"
+    "item11 item33 item33 item33 item33 item33 item33 item33 item31"
+    "item10 item33 item33 item33 item33 item33 item33 item33 item32"
+    "item9 item8 item7 item6 item5 item4 item3 item2 item1";
+    border: none;
+    border-radius: 8px; 
+}
+
+#Part1{ grid-area: item1; }
+#Part2{ grid-area: item2; }
+#Part3{ grid-area: item3; }
+#Part4{ grid-area: item4; }
+#Part5{ grid-area: item5; }
+#Part6{ grid-area: item6; }
+#Part7{ grid-area: item7; }
+#Part8{ grid-area: item8; }
+#Part9{ grid-area: item9; }
+#Part10{ grid-area: item10; }
+#Part11{ grid-area: item11; }
+#Part12{ grid-area: item12; }
+#Part13{ grid-area: item13; }
+#Part14{ grid-area: item14; }
+#Part15{ grid-area: item15; }
+#Part16{ grid-area: item16; }
+#Part17{ grid-area: item17; }
+#Part18{ grid-area: item18; }
+#Part19{ grid-area: item19; }
+#Part20{ grid-area: item20; }
+#Part21{ grid-area: item21; }
+#Part22{ grid-area: item22; }
+#Part23{ grid-area: item23; }
+#Part24{ grid-area: item24; }
+#Part25{ grid-area: item25; }
+#Part26{ grid-area: item26; }
+#Part27{ grid-area: item27; }
+#Part28{ grid-area: item28; }
+#Part29{ grid-area: item29; }
+#Part30{ grid-area: item30; }
+#Part31{ grid-area: item31; }
+#Part32{ grid-area: item32; }
+#Part33{ grid-area: item33; }
+
+.grid-item{
+    background-color: aqua;
+    height:80px;
+    width: 80px;
+    margin-right: 1%;
+    border: none;
+    border-radius: 8px; 
+}
+
+h6{
+    margin: 0.5%;
+    text-align: center;
+}
+
+.grid-item-cube{
+    font-size: large;
+    background-color: aqua;
+}
+
+.solider{
+    object-fit: cover;
+    width: 80px;
+    height: 150px;
+    border-radius: 8px; 
+    margin: 10px;
+
+}
+
+.Blue{
+    background-image: url(../image/חייל\ כחול.png);
+    background-size: cover;
+}
+
+.Red{
+    background-image: url(../image/חייל\ אדום.png);
+    background-size: cover;
+}
+
+.Orange{
+    background-image: url(../image/חייל\ כתום.png);
+    background-size: cover;
+}
+
+.Yellow{
+    background-image: url(../image/חייל\ צהוב.png);
+    background-size: cover;
+}
+
+.queue{
+    height: 80px;
+    width: 60px;
+    background-image: url(../image/חייל\ בסיס.png);
+    background-size: cover;
+    display: none;
+}
+
+.cube{
+    height: 60px;
+    width: 60px;
+    background-image: url("../image/10.png");
+    background-size: cover;
+    border-radius: 8px; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    /* height:  50%;  */
+    box-shadow: 0 4px 22px 0 rgba(0,0,0,.11);
+    border-radius: 5px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.buy{
+    align-items: center;
+    width: 70px;
+    height: 20px;
+}
+.closeSolider{
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    background-image: none;
+    text-align: center;
+    border: none;
+}
+.closeSolider:hover,
+.closeSolider:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  
+}
+main form {
+order: 3;
+width: 70%;
+border: groove;
+}  
+.choosePlayers{
+text-align: right;  
+margin-left: 10%;
+width: 40%;
+height: 40%;
+order: 2;
+border: groove;
+border-radius: 8px; 
+padding: 20px;
+box-sizing: border-box;
+gap: 10px;
+} 
+.corner{
+    width: 120px;
+    height: 120px;
+}
+.twoSoldiers{
+    display:flex ;
+}
+
+.buy span {
+    /* סגנונות עיצוב של הטקסט */
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* צבע טקסט */
+    /* וכל סגנון נוסף שרוצים להוסיף */
+}
+
+
+.lightcoral {
+    background-color: #FFCCCC;
+}.lightblue{
+    background-color: #ADD8E6;
+}.lightgreen{
+    background-color: #90EE90;
+}.lightyellow{
+    background-color: #FFFFE0;
+}.lightpink{
+    background-color: #FFB6C1;
+}.lightgoldenrodyellow{
+    background-color: #FFD700;
+}.lavender{
+    background-color: #E6E6FA;
+}.tan{
+    background-color: #D2B48C;
+}
+.endTurn,.startPlay,.updateB{
+    background-color:black;
+    padding: 15px 20px;
+    width: 200px; 
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* background-image: url("../image/תמונה2.png"); */
+}
+h5{
+    font-size: 25px;
+}

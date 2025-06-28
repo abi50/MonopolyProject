@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/register.js" defer></script>
+</head>
+<body>
+   
+        <form class="container">
+          
+            <div class="details" dir="rtl">
+                <section class="name">
+                   
+                    <input type="text" id="name" minlength="2" maxlength="20" required autofocus placeholder=" שם פרטי ">
+                </section>
+        
+                <section class="lastName">
+                   
+                    <input type="text" id="lastName" minlength="2" maxlength="20" required autofocus placeholder=" שם משפחה ">
+                </section>
+        
+                <section class="phone">
+               
+                    <input type="phone" id="phone"  pattern="[0-9]{9}" placeholder="  פלאפון " required>
+                </section>
+        
+                <section class="password">
+                 
+                    <input type="password" id="password" pattern="[0-9]{9}" placeholder="  תעודת זהות " required>
+                </section>
+        
+            </div>
+            <br>  <button  id="registerc"  onclick="registerr()">הרשם</button> 
+        </form>
+        <br> <button type="submit" id="logIn" class="logIn" onclick="logIn()">התחבר</button>    
+
+        
+
+
+
+</body>
+</html>

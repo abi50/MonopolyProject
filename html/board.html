@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/board.css">
+    <script src="../js/board.JS" defer></script>
+</head>
+<body>
+    <input class="updateB" type="button" onclick="updateB()" value="לשינוי או עדכון לוח">      
+    <input class="startPlay" type="button" onclick="startPlay()" value="להתחלת משחק">      
+        </div>
+    <section>
+        <div class="choosePlayers" dir="rtl">
+                <h5>בחר שחקנים</h5>
+                <div class="twoSoldiers">
+                    <input type="button" class="solider Blue" id="Blue-solider">
+                    <div class="detailsBlue modal-content">
+                        <button class="Blue closeSolider" id="close" onclick="closeDetails(event)">&times;</button>
+                        <div>הכסף שלי:</div>
+                        <span class="amountMoneyBlue">1000</span>
+                        <div>הנכסים שלי:</div>
+                        <span class="propertysBlue"></span>                      
+                    </div>
+                </div>
+                <div class="twoSoldiers">
+                    <input type="button" class="solider Red" id="Red-solider">
+                    <div class="detailsRed modal-content">
+                         <button class="Red closeSolider" id="close" onclick="closeDetails(event)">&times;</button>
+                         <div>הכסף שלי:</div>
+                         <span class="amountMoneyRed">1000</span>
+                         <div>הנכסים שלי:</Div>
+                         <span class="propertysRed"></span>                      
+                    </div>
+                </div>
+                <div class="twoSoldiers">
+                    <input type="button" class="solider Orange" id="Orange-solider">
+                    <div class="detailsOrange modal-content">
+                         <button class="Orange closeSolider" id="close" onclick="closeDetails(event)">&times;</button>
+                         <div>הכסף שלי:</div>
+                         <span class="amountMoneyOrange">1000</span>
+                         <div>הנכסים שלי:</div>
+                         <span class="propertysOrange"></span>                      
+                    </div>
+                </div>
+                <div class="twoSoldiers">
+                    <input type="button" class="solider Yellow" id="Yellow-solider">
+                    <div class="detailsYellow modal-content">
+                        <button class="Yellow closeSolider" id="close" onclick="closeDetails(event)">&times;</button>
+                        <div>הכסף שלי:</div>
+                        <span class="amountMoneyYellow">1000</span>
+                        <div>הנכסים שלי:</div>
+                        <span class="propertysYellow"></span>                      
+                    </div>
+                </div>
+                <div dir="rtl">
+                    <h5 id="turnFor">התור של</h5>   
+                    <div class="queue"></div>   
+                </div>
+                <br>
+                <input class="endTurn" type="button" onclick="endTurn()" value="סיום תור">    
+         </div>
+       
+        <div class="board"></div>
+    </section>
+</body>
+</html>
